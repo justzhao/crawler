@@ -32,14 +32,14 @@ do
 #	echo $ur
  if [[ "$ur" =~ ^/  ]];then
 	
-    wget  $url$ur -P ./img 
+    wget  $url$ur -P /home/zhaopeng/work/img 
 	# echo "yes $url"
      
 elif [[ "$ur" =~ ^http   ]];then 
-    wget -P ./img $ur
+    wget -P /home/zhaopeng/work/img $ur
 	 #  echo "hehe $ur"
  else
-	 wget -P ./img $url/$ur
+	 wget -P /home/zhaopeng/work/img $url/$ur
 fi
 
 done
